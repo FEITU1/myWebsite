@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "c1 c2"
+    "c3 c3";
+  grid-gap: 8px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 2fr;
+
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+.redBackground {
+  grid-area: title;
+  background-color: red;
+}
+
+.greenBackground {
+  grid-area: c1;
+  background-color: green;
+}
+
+.yellowBackground {
+  grid-area: c2;
+  background-color: yellow;
+}
+
+.pinkBackground {
+  grid-area: c3;
+  text-align: center;
+  background-color: pink;
+}
